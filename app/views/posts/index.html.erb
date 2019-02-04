@@ -1,5 +1,10 @@
-<% @posts.each do |post| %>
+<!-- <% @posts.each do |post| %>
   <div>
     <%= post.title %> - <%= post.updated_at.strftime("Last updated %A, %b %e, at %l:%M %p") %>
+  </div>
+<% end %> -->
+<% @posts.each do |post| %>
+  <div>
+    <%= post.title %> - <%= last_updated post %>
   </div>
 <% end %>
